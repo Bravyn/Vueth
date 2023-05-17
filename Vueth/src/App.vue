@@ -1,17 +1,29 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import {NavBar} from './components/NavBar.vue'
+
 </script>
 
 <template>
   <div class = "container">
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-    <NavBar/>
-  </header>
+  <header>   
   <div>
-    <h1>Vueth Labs</h1>
-  </div>
+      <nav>
+        <div class = "logo">
+          <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+        </div>
+        
+          <RouterLink to="/">Home</RouterLink>
+  
+          <RouterLink to="/about">About</RouterLink>
+      
+          <div >
+            <h1><span>Vueth</span> Labs</h1>
+          </div>
+        </nav>
+      
+    </div>
+  </header>
+ 
 </div>
   
     <RouterView />   
@@ -21,12 +33,27 @@ import {NavBar} from './components/NavBar.vue'
 
 <style>
 .container{
-  background-color: blue;
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: space-around;
+  
 }
 h1{
   color: white;
 }
 
+nav{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: grey;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+h1{
+  color: blue;
+}
 </style>
