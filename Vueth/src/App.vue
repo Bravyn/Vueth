@@ -13,11 +13,15 @@ import { RouterLink, RouterView } from 'vue-router'
         </div>
         
           <RouterLink to="/">Home</RouterLink>
-  
+          
           <RouterLink to="/about">About</RouterLink>
       
           <div >
-            <h1><span>Vueth</span> Labs</h1>
+            <h1>Login </h1>
+          </div>
+
+          <div class = "name">
+            <h1><span>Vueth</span>Labs</h1>
           </div>
         </nav>
       
@@ -39,9 +43,7 @@ import { RouterLink, RouterView } from 'vue-router'
   justify-content: space-around;
   
 }
-h1{
-  color: white;
-}
+
 
 nav{
   display: flex;
@@ -49,11 +51,18 @@ nav{
   align-items: center;
   background-color: grey;
   color: white;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
-h1{
-  color: blue;
+.name{
+  color: rgb(5, 5, 126);
+}
+.name span{
+  color:rgb(168, 232, 5);
+}
+
+.logo img{
+  height:70px;
 }
 </style>
